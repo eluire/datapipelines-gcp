@@ -5,7 +5,8 @@ on:
     branches:
     - main
     paths:
- #     - '**.tf'
+      - '**.tf'
+      - '**.tfvars'
   pull_request:
 
 jobs:
