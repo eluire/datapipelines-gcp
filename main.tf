@@ -47,7 +47,7 @@ module "bigquery-dataset-gasolina" {
 module "bucket-raw" {
   source  = "./modules/gcs"
 
-  name       = "data-pipeline-stack-combustiveis-brasil-MEBASTO-raw"
+  name       = "data-pipeline-stack-combustiveis-brasil-mebasto-raw"
   project_id = var.project_id
   location   = var.region
 }
@@ -55,7 +55,7 @@ module "bucket-raw" {
 module "bucket-curated" {
   source  = "./modules/gcs"
 
-  name       = "data-pipeline-stack-combustiveis-brasil-MEBASTO-curated"
+  name       = "data-pipeline-stack-combustiveis-brasil-mebasto-curated"
   project_id = var.project_id
   location   = var.region
 }
@@ -63,7 +63,7 @@ module "bucket-curated" {
 module "bucket-pyspark-tmp" {
   source  = "./modules/gcs"
 
-  name       = "data-pipeline-stack-combustiveis-brasil-pyspark-MEBASTO-tmp"
+  name       = "data-pipeline-stack-combustiveis-brasil-pyspark-mebasto-tmp"
   project_id = var.project_id
   location   = var.region
 }
@@ -71,7 +71,7 @@ module "bucket-pyspark-tmp" {
 module "bucket-pyspark-code" {
   source  = "./modules/gcs"
 
-  name       = "data-pipeline-stack-combustiveis-brasil-pyspark-MEBASTO-code"
+  name       = "data-pipeline-stack-combustiveis-brasil-pyspark-mebasto-code"
   project_id = var.project_id
   location   = var.region
 }
